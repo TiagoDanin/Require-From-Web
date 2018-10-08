@@ -1,0 +1,30 @@
+{
+  "name": "require-from-url",
+  "version": "1.0.0",
+  "description": "Import/Load/Require module from url",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TiagoDanin/Require-From-Url.git"
+  },
+  "keywords": [
+    "require",
+    "import",
+    "load",
+    "module",
+    "web",
+    "url"
+  ],
+  "author": "Tiago Danin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TiagoDanin/Require-From-Url/issues"
+  },
+  "homepage": "https://github.com/TiagoDanin/Require-From-Url#readme",
+  "dependencies": {
+    "axios": "^0.18.0"
+  }
+}
