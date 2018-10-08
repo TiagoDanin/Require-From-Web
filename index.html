@@ -5,14 +5,14 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<meta name="description" content="[WIP] by Tiago Danin.">
+	<meta name="description" content="Import/Load/Require module from url by Tiago Danin.">
 	<meta name="keywords" content="tiago, danin, tiagodanin, tiagoedge, Require-From-Url">
 	<meta name="author" content="TiagoDanin">
 
 	<meta property="og:title" content="TiagoDanin">
 	<meta property="og:url" content="https://tiagodanin.github.io/Require-From-Url">
 	<meta property="og:site_name" content="Require-From-Url">
-	<meta property="og:description" content="[WIP] by Tiago Danin.">
+	<meta property="og:description" content="Import/Load/Require module from url by Tiago Danin.">
 	<meta name="twitter:title" content="Require-From-Url">
 	<meta name="twitter:url" content="https://tiagodanin.github.io/Require-From-Url">
 
@@ -66,7 +66,7 @@
 		<div class="uk-card uk-card-body uk-card-primary">
 			<h3 class="uk-card-title">About</h3>
 			<div class="uk-panel">
-				<p>[WIP] by Tiago Danin.</p>
+				<p>Import/Load/Require module from url by Tiago Danin.</p>
 			</div>
 		</div>
 		<hr class="uk-divider-icon">
@@ -74,15 +74,49 @@
 
 	<!--
 title: Require-From-Url
-description: [WIP] by Tiago Danin.
+description: Import/Load/Require module from url by Tiago Danin.
 cubohub: true
 baseURL: https://tiagodanin.github.io
 -->
 
 
 <div class="uk-container">
-	<h1 id="require-from-url"><a href="#require-from-url">Require-From-Url</a></h1>
-<p>[WIP]</p>
+	<h1 id="require-from-url-build-status"><a href="#require-from-url-build-status">Require-From-Url <a href="https://travis-ci.org/TiagoDanin/Require-From-Url"><img src="https://travis-ci.org/TiagoDanin/Require-From-Url.svg?branch=master" alt="Build Status"></a></a></h1>
+<p>Import/Load/Require module from url</p>
+<h2 id="installation"><a href="#installation">Installation</a></h2>
+<p>This is a <a href="https://nodejs.org/">Node.js</a> module available through the
+<a href="https://www.npmjs.com/">npm registry</a>. It can be installed using the
+<a href="https://docs.npmjs.com/getting-started/installing-npm-packages-locally"><code>npm</code></a> command line tools.</p>
+<pre><code class="hljs language-sh">npm install require-from-url --save</code></pre>
+<h2 id="how-to-use"><a href="#how-to-use">How to Use</a></h2>
+<h3 id="example"><a href="#example">Example</a></h3>
+<pre><code class="hljs language-JavaScript"><span class="hljs-keyword">const</span> requireFromUrl = <span class="hljs-built_in">require</span>(<span class="hljs-string">'require-from-url'</span>)
+
+<span class="hljs-keyword">const</span> url = <span class="hljs-string">'https://unpkg.com/jformat@1.0.4/index.js'</span>
+requireFromUrl(url).then(<span class="hljs-function">(<span class="hljs-params">format</span>) =></span> {
+	format(<span class="hljs-string">"Forever {Python}"</span>, {<span class="hljs-attr">Python</span>: <span class="hljs-string">"JavaScript"</span>}) <span class="hljs-comment">//Forever JavaScript</span>
+})</code></pre>
+<h3 id="options--requirefromurlurl-axiosoptions"><a href="#options--requirefromurlurl-axiosoptions">Options :: requireFromUrl(url, axiosOptions)</a></h3>
+<ul>
+<li>
+<p><strong>url</strong> - String</p>
+<blockquote>
+<p>Url of file.</p>
+</blockquote>
+</li>
+<li>
+<p><strong>axiosOptions</strong> - Object</p>
+<blockquote>
+<p>Config/option of Axios.</br>`</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="dependencies"><a href="#dependencies">Dependencies</a></h2>
+<ul>
+<li><a href="https://ghub.io/axios">axios</a>: Promise based HTTP client for the browser and node.js</li>
+</ul>
+<h2 id="license"><a href="#license">License</a></h2>
+<p>MIT</p>
 
 
 	<hr class="uk-margin-top-remove uk-divider-icon">
