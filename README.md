@@ -17,7 +17,7 @@ npm install require-from-web --save
 ### Example
 
 ```JavaScript
-const requireFromUrl = require('require-from-web')
+const requireFromWeb = require('require-from-web')
 
 const url = 'https://unpkg.com/jformat@1.0.4/index.js'
 requireFromWeb(url).then((format) => {
