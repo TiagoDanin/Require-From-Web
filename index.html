@@ -81,22 +81,22 @@ baseURL: https://tiagodanin.github.io
 
 
 <div class="uk-container">
-	<h1 id="require-from-url-build-status"><a href="#require-from-url-build-status">Require-From-Url <a href="https://travis-ci.org/TiagoDanin/Require-From-Url"><img src="https://travis-ci.org/TiagoDanin/Require-From-Url.svg?branch=master" alt="Build Status"></a></a></h1>
+	<h1 id="require-from-web-build-status"><a href="#require-from-web-build-status">Require-From-Web <a href="https://travis-ci.org/TiagoDanin/Require-From-Web"><img src="https://travis-ci.org/TiagoDanin/Require-From-Web.svg?branch=master" alt="Build Status"></a></a></h1>
 <p>Import/Load/Require module from url</p>
 <h2 id="installation"><a href="#installation">Installation</a></h2>
 <p>This is a <a href="https://nodejs.org/">Node.js</a> module available through the
 <a href="https://www.npmjs.com/">npm registry</a>. It can be installed using the
 <a href="https://docs.npmjs.com/getting-started/installing-npm-packages-locally"><code>npm</code></a> command line tools.</p>
-<pre><code class="hljs language-sh">npm install require-from-url --save</code></pre>
+<pre><code class="hljs language-sh">npm install require-from-web --save</code></pre>
 <h2 id="how-to-use"><a href="#how-to-use">How to Use</a></h2>
 <h3 id="example"><a href="#example">Example</a></h3>
-<pre><code class="hljs language-JavaScript"><span class="hljs-keyword">const</span> requireFromUrl = <span class="hljs-built_in">require</span>(<span class="hljs-string">'require-from-url'</span>)
+<pre><code class="hljs language-JavaScript"><span class="hljs-keyword">const</span> requireFromUrl = <span class="hljs-built_in">require</span>(<span class="hljs-string">'require-from-web'</span>)
 
 <span class="hljs-keyword">const</span> url = <span class="hljs-string">'https://unpkg.com/jformat@1.0.4/index.js'</span>
-requireFromUrl(url).then(<span class="hljs-function">(<span class="hljs-params">format</span>) =></span> {
+requireFromWeb(url).then(<span class="hljs-function">(<span class="hljs-params">format</span>) =></span> {
 	format(<span class="hljs-string">"Forever {Python}"</span>, {<span class="hljs-attr">Python</span>: <span class="hljs-string">"JavaScript"</span>}) <span class="hljs-comment">//Forever JavaScript</span>
 })</code></pre>
-<h3 id="options--requirefromurlurl-axiosoptions"><a href="#options--requirefromurlurl-axiosoptions">Options :: requireFromUrl(url, axiosOptions)</a></h3>
+<h3 id="options--requirefromweburl-axiosoptions"><a href="#options--requirefromweburl-axiosoptions">Options :: requireFromWeb(url, axiosOptions)</a></h3>
 <ul>
 <li>
 <p><strong>url</strong> - String</p>
