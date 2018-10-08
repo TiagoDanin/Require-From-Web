@@ -1,4 +1,4 @@
-# Require-From-Url [![Build Status](https://travis-ci.org/TiagoDanin/Require-From-Url.svg?branch=master)](https://travis-ci.org/TiagoDanin/Require-From-Url)
+# Require-From-Web [![Build Status](https://travis-ci.org/TiagoDanin/Require-From-Web.svg?branch=master)](https://travis-ci.org/TiagoDanin/Require-From-Web)
 
 Import/Load/Require module from url
 
@@ -9,7 +9,7 @@ This is a [Node.js](https://nodejs.org/) module available through the
 [`npm`](https://docs.npmjs.com/getting-started/installing-npm-packages-locally) command line tools.
 
 ```sh
-npm install require-from-url --save
+npm install require-from-web --save
 ```
 
 ## How to Use
@@ -17,15 +17,15 @@ npm install require-from-url --save
 ### Example
 
 ```JavaScript
-const requireFromUrl = require('require-from-url')
+const requireFromUrl = require('require-from-web')
 
 const url = 'https://unpkg.com/jformat@1.0.4/index.js'
-requireFromUrl(url).then((format) => {
+requireFromWeb(url).then((format) => {
 	format("Forever {Python}", {Python: "JavaScript"}) //Forever JavaScript
 })
 ```
 
-### Options :: requireFromUrl(url, axiosOptions)
+### Options :: requireFromWeb(url, axiosOptions)
 
 - **url** - String
 > Url of file.
