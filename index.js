@@ -1,5 +1,5 @@
 const axios = require('axios')
-module.exports = async (url, options) => {
+module.exports = async (url, options, code) => {
 	if (typeof url !== 'string') {
 		throw new TypeError('Expected a string')
 	}
@@ -10,6 +10,9 @@ module.exports = async (url, options) => {
 		...options
 	})
 	var string = response.data.toString()
+	if (code) {
+		string += '\n' + code
+	}
 	var _module = new module.constructor()
 	_module.filename = url
 	_module._compile(string, url)

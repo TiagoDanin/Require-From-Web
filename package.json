@@ -1,6 +1,6 @@
 {
   "name": "require-from-web",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Import/Load/Require module from url",
   "main": "index.js",
   "scripts": {

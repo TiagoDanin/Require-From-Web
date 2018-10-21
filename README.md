@@ -25,13 +25,16 @@ requireFromWeb(url).then((format) => {
 })
 ```
 
-### Options :: requireFromWeb(url, axiosOptions)
+### Options :: requireFromWeb(url, axiosOptions, code)
 
 - **url** - String
 > Url of file.
 
 - **axiosOptions** - Object
 > Config/option of Axios.</br>`
+
+- **code** - String
+> Add more code
 
 ## Dependencies
 
