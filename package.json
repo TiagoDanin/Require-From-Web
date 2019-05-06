@@ -4,7 +4,9 @@
   "description": "Import/Load/Require module from url",
   "main": "index.js",
   "scripts": {
-    "test": "node test.js"
+    "test": "node test.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -25,6 +27,8 @@
   },
   "homepage": "https://github.com/TiagoDanin/Require-From-Url#readme",
   "dependencies": {
-    "axios": "^0.18.0"
-  }
+    "axios": "^0.18.0",
+    "snyk": "^1.161.1"
+  },
+  "snyk": true
 }
