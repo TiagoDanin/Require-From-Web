@@ -28,7 +28,7 @@
   "homepage": "https://github.com/TiagoDanin/Require-From-Url#readme",
   "dependencies": {
     "axios": "^0.18.0",
-    "snyk": "^1.161.1"
+    "snyk": "^1.174.1"
   },
   "snyk": true
 }
