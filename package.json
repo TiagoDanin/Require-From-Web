@@ -2,7 +2,7 @@
 	"name": "require-from-web",
 	"main": "index.js",
 	"preferGlobal": false,
-	"version": "1.1.0",
+	"version": "1.1.1",
 	"description": "Import/Load/Require module from url",
 	"author": {
 		"email": "TiagoDanin@outlook.com",
