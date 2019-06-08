@@ -1,34 +1,61 @@
 {
-  "name": "require-from-web",
-  "version": "1.1.0",
-  "description": "Import/Load/Require module from url",
-  "main": "index.js",
-  "scripts": {
-    "test": "node test.js",
-    "snyk-protect": "snyk protect",
-    "prepublish": "npm run snyk-protect"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/TiagoDanin/Require-From-Url.git"
-  },
-  "keywords": [
-    "require",
-    "import",
-    "load",
-    "module",
-    "web",
-    "url"
-  ],
-  "author": "Tiago Danin",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/TiagoDanin/Require-From-Url/issues"
-  },
-  "homepage": "https://github.com/TiagoDanin/Require-From-Url#readme",
-  "dependencies": {
-    "axios": "^0.18.1",
-    "snyk": "^1.161.1"
-  },
-  "snyk": true
+	"name": "require-from-web",
+	"main": "index.js",
+	"preferGlobal": false,
+	"version": "1.1.0",
+	"description": "Import/Load/Require module from url",
+	"author": {
+		"email": "TiagoDanin@outlook.com",
+		"name": "Tiago Danin",
+		"url": "https://TiagoDanin.github.io"
+	},
+	"license": "MIT",
+	"keywords": [
+		"import",
+		"module",
+		"node-module",
+		"require",
+		"url",
+		"web"
+	],
+	"scripts": {
+		"start": "node index.js",
+		"test": "xo && node test.js"
+	},
+	"engines": {
+		"node": ">=8"
+	},
+	"private": false,
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/TiagoDanin/Require-From-Web.git"
+	},
+	"homepage": "https://github.com/TiagoDanin/Require-From-Url#readme",
+	"bugs": {
+		"url": "https://github.com/TiagoDanin/Require-From-Url/issues"
+	},
+	"github": {
+		"name": "Require-From-Url",
+		"owner": "TiagoDanin"
+	},
+	"files": [
+		"LICENSE",
+		"README.md",
+		"index.js",
+		"package.json"
+	],
+	"dependencies": {
+		"axios": "^0.18.1"
+	},
+	"devDependencies": {
+		"xo": "^0.24.0"
+	},
+	"xo": {
+		"rules": {
+			"quote-props": "warn",
+			"array-callback-return": "warn",
+			"require-atomic-updates": "warn"
+		},
+		"semicolon": false
+	}
 }

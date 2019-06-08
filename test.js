@@ -1,10 +1,10 @@
-const requireFromWeb = require('.')
 const assert = require('assert')
+const requireFromWeb = require('.')
 
-var url = 'https://unpkg.com/jformat@1.0.4/index.js'
-requireFromWeb(url).then((format) => {
-	assert.equal(
-		format("Forever {Python}", {Python: "JavaScript"}),
+const url = 'https://unpkg.com/jformat@1.0.4/index.js'
+requireFromWeb(url).then(format => {
+	assert.strictEqual(
+		format('Forever {Python}', {Python: 'JavaScript'}),
 		'Forever JavaScript'
 	)
 	console.log('Done!')
