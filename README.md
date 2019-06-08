@@ -32,16 +32,19 @@ requireFromWeb(url).then(format => {
 
 ### Options :: requireFromWeb(url, axiosOptions, code)
 
-**url**
+#### url
 Url of file.
+
 Type: `String`
 
-**axiosOptions**
+#### axiosOptions**
 Config/option of Axios.
+
 Type: `Object`
 
-**code**
+#### code
 Add more code in end script.
+
 Type: `String`
 
 ## Tests
