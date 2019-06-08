@@ -81,48 +81,53 @@ baseURL: https://tiagodanin.github.io
 
 
 <div class="uk-container">
-	<h1 id="require-from-web-build-status"><a href="#require-from-web-build-status">Require-From-Web <a href="https://travis-ci.org/TiagoDanin/Require-From-Web"><img src="https://travis-ci.org/TiagoDanin/Require-From-Web.svg?branch=master" alt="Build Status"></a></a></h1>
+	<h1 id="require-from-web"><a href="#require-from-web">Require From Web</a></h1>
+<p><a href="https://travis-ci.org/TiagoDanin/Require-From-Web"><img src="https://img.shields.io/travis/TiagoDanin/Require-From-Web.svg?branch=master&#x26;style=flat-square" alt="Travis"></a> <a href="https://npmjs.org/package/require-from-web"><img src="https://img.shields.io/npm/dt/require-from-web.svg?style=flat-square" alt="Downloads"></a> <a href="https://npmjs.org/package/require-from-web"><img src="https://img.shields.io/node/v/require-from-web.svg?style=flat-square" alt="Node"></a> <a href="https://npmjs.org/package/require-from-web"><img src="https://img.shields.io/npm/v/require-from-web.svg?style=flat-square" alt="Version"></a> <a href="https://github.com/xojs/xo"><img src="https://img.shields.io/badge/code%20style-XO-red.svg?style=flat-square" alt="XO code style"></a> </p>
 <p>Import/Load/Require module from url</p>
 <h2 id="installation"><a href="#installation">Installation</a></h2>
-<p>This is a <a href="https://nodejs.org/">Node.js</a> module available through the
-<a href="https://www.npmjs.com/">npm registry</a>. It can be installed using the
-<a href="https://docs.npmjs.com/getting-started/installing-npm-packages-locally"><code>npm</code></a> command line tools.</p>
-<pre><code class="hljs language-sh">npm install require-from-web --save</code></pre>
-<h2 id="how-to-use"><a href="#how-to-use">How to Use</a></h2>
-<h3 id="example"><a href="#example">Example</a></h3>
-<pre><code class="hljs language-JavaScript"><span class="hljs-keyword">const</span> requireFromWeb = <span class="hljs-built_in">require</span>(<span class="hljs-string">'require-from-web'</span>)
+<p>Module available through the <a href="https://www.npmjs.com/">npm registry</a>. It can be installed using the  <a href="https://docs.npmjs.com/getting-started/installing-npm-packages-locally"><code>npm</code></a> or <a href="https://yarnpkg.com/en/"><code>yarn</code></a> command line tools.</p>
+<pre><code class="hljs language-sh"><span class="hljs-comment"># NPM</span>
+npm install require-from-web --save
+<span class="hljs-comment"># Or Using Yarn</span>
+yarn add require-from-web</code></pre>
+<h2 id="example"><a href="#example">Example</a></h2>
+<pre><code class="hljs language-js"><span class="hljs-keyword">const</span> requireFromWeb = <span class="hljs-built_in">require</span>(<span class="hljs-string">'require-from-web'</span>)
 
 <span class="hljs-keyword">const</span> url = <span class="hljs-string">'https://unpkg.com/jformat@1.0.4/index.js'</span>
-requireFromWeb(url).then(<span class="hljs-function">(<span class="hljs-params">format</span>) =></span> {
-	format(<span class="hljs-string">"Forever {Python}"</span>, {<span class="hljs-attr">Python</span>: <span class="hljs-string">"JavaScript"</span>}) <span class="hljs-comment">//Forever JavaScript</span>
+
+requireFromWeb(url).then(<span class="hljs-function"><span class="hljs-params">format</span> =></span> {
+	<span class="hljs-keyword">const</span> text = format(<span class="hljs-string">'Forever {Python}'</span>, {<span class="hljs-attr">Python</span>: <span class="hljs-string">'JavaScript'</span>})
+	<span class="hljs-built_in">console</span>.log(text) <span class="hljs-comment">// Forever JavaScript</span>
 })</code></pre>
+<h2 id="documentation"><a href="#documentation">Documentation</a></h2>
 <h3 id="options--requirefromweburl-axiosoptions-code"><a href="#options--requirefromweburl-axiosoptions-code">Options :: requireFromWeb(url, axiosOptions, code)</a></h3>
-<ul>
-<li>
-<p><strong>url</strong> - String</p>
-<blockquote>
-<p>Url of file.</p>
-</blockquote>
-</li>
-<li>
-<p><strong>axiosOptions</strong> - Object</p>
-<blockquote>
-<p>Config/option of Axios.</br>`</p>
-</blockquote>
-</li>
-<li>
-<p><strong>code</strong> - String</p>
-<blockquote>
-<p>Add more code</p>
-</blockquote>
-</li>
-</ul>
+<p><strong>url</strong>
+Url of file.
+Type: <code>String</code></p>
+<p><strong>axiosOptions</strong>
+Config/option of Axios.
+Type: <code>Object</code></p>
+<p><strong>code</strong>
+Add more code in end script.
+Type: <code>String</code></p>
+<h2 id="tests"><a href="#tests">Tests</a></h2>
+<p>To run the test suite, first install the dependencies, then run <code>test</code>:</p>
+<pre><code class="hljs language-sh"><span class="hljs-comment"># NPM</span>
+npm <span class="hljs-built_in">test</span>
+<span class="hljs-comment"># Or Using Yarn</span>
+yarn <span class="hljs-built_in">test</span></code></pre>
 <h2 id="dependencies"><a href="#dependencies">Dependencies</a></h2>
 <ul>
 <li><a href="https://ghub.io/axios">axios</a>: Promise based HTTP client for the browser and node.js</li>
 </ul>
+<h2 id="dev-dependencies"><a href="#dev-dependencies">Dev Dependencies</a></h2>
+<ul>
+<li><a href="https://ghub.io/xo">xo</a>: JavaScript happiness style linter ❤️</li>
+</ul>
+<h2 id="contributors"><a href="#contributors">Contributors</a></h2>
+<p>Pull requests and stars are always welcome. For bugs and feature requests, please <a href="https://github.com/TiagoDanin/Require-From-Web/issues">create an issue</a>. <a href="https://github.com/TiagoDanin/Require-From-Web/graphs/contributors">List of all contributors</a>.</p>
 <h2 id="license"><a href="#license">License</a></h2>
-<p>MIT</p>
+<p><a href="LICENSE">MIT</a> © <a href="https://TiagoDanin.github.io">Tiago Danin</a></p>
 
 
 	<hr class="uk-margin-top-remove uk-divider-icon">
