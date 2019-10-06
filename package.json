@@ -48,7 +48,7 @@
 		"axios": "^0.18.1"
 	},
 	"devDependencies": {
-		"xo": "^0.24.0"
+		"xo": "^0.25.3"
 	},
 	"xo": {
 		"rules": {
