@@ -45,7 +45,7 @@
 		"package.json"
 	],
 	"dependencies": {
-		"axios": "^0.19.1"
+		"axios": "^0.19.2"
 	},
 	"devDependencies": {
 		"xo": "^0.25.3"
