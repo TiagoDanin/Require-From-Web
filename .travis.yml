@@ -1,11 +1,10 @@
 language: node_js
 node_js:
+    - "13"
+    - "12"
     - "10"
-    - "9"
-    - "8"
 install:
-    - npm install
+    - yarn install
 script:
     - npm version
     - npm run test
-sudo: true
