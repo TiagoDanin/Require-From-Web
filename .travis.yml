@@ -6,5 +6,4 @@ node_js:
 install:
     - yarn install
 script:
-    - npm version
-    - npm run test
+    - yarn test
