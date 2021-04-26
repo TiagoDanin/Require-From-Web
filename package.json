@@ -23,7 +23,7 @@
 		"test": "xo && node test.js"
 	},
 	"engines": {
-		"node": ">=10"
+		"node": ">=v14.16.1"
 	},
 	"private": false,
 	"repository": {
