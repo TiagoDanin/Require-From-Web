@@ -2,7 +2,7 @@ language: node_js
 node_js:
     - "13"
     - "12"
-    - "10"
+    - "10.24.1"
 install:
     - yarn install
 script:
